@@ -1,0 +1,180 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+:root{
+    --brownesh-black:#333;
+    --light-blue: #9CA3DB;
+    --glacious-blue: #677DB7;
+    --delft-blue: #454B66;
+    --van-brown: #322A26;
+    --smocky-black: #191308;
+    --light-red : #d3394c;
+}
+
+
+header{
+    text-align: center;
+}
+
+.choose-file{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+.choose-file .file-path-wrapper{
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.file-path-wrapper p{
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.file-path-wrapper #fileInput{
+    cursor: pointer;
+}
+
+
+.file-version-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-version-wrapper p{
+    margin-right: 0.6rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.inputfile + label {
+    max-width: 90%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label:hover{
+    background-color: rgb(75, 15, 49);
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid var(--brownesh-black, #333);
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: var(--light-red);
+}
+
+.option {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: #f1e5e6;
+}
+
+.line {
+    border-right: 1px solid var(--brownesh-black, #333);
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+
+.selected{
+    background-color: #f1e5e6;
+    color: var(--light-red);
+}
+
+
+
+.option:hover{
+    background-color: #f1e5e6;
+    color: var(--light-red);
+}
+
+
+
+.translate-btn{
+    margin-top: 2rem;
+    border: 2px solid var(--brownesh-black, #333);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.translate-btn:hover {
+    background-color: #f1e5e6;
+    color: #d3394c;
+    font-weight: bold;
+}
+
+
+.invisible{
+    display: none;
+}
+
+.error-message-wrapper{
+    margin-left: 1rem;
+}
+
+.error-message-wrapper .error-message{
+    color: red;
+    font-weight: bold;
+}
+
+.final-solution-output{
+    margin-top: 2rem;
+}
